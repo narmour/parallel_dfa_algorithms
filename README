@@ -1,0 +1,8 @@
+compile: 
+    mpic++ -o mpi_mat_mult -std=c++11 mpi_mat_mult.cpp 
+
+
+run :
+    mpirun -n X ./mpi_mat_mult
+
+X needs to be a divisor of K and X <= K
